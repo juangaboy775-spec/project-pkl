@@ -1,0 +1,604 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Website dokumentasi Praktik Kerja Lapangan di Badan Pusat Statistik Kota Medan tahun 2025" />
+  <meta name="keywords" content="PKL, BPS Medan, Praktik Kerja Lapangan, Rekayasa Perangkat Lunak" />
+  <meta name="author" content="Tim PKL BPS" />
+  <title>PKL di kantor BPS kota Medan</title>
+  
+  <!-- External CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/css/lightbox.min.css" />
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- Preloader -->
+  <div class="preloader">
+    <div class="loader-container">
+      <div class="loader"></div>
+      <div class="loader-text">Memuat Konten PKL...</div>
+    </div>
+  </div>
+  
+  <!-- Dark Mode Toggle -->
+  <div class="dark-mode-toggle" onclick="toggleDarkMode()">
+    <i class="fas fa-moon"></i>
+  </div>
+  
+  <!-- Share Buttons -->
+  <div class="share-container">
+    <div class="share-btn share-facebook" onclick="shareToFacebook()">
+      <i class="fab fa-facebook-f"></i>
+    </div>
+    <div class="share-btn share-twitter" onclick="shareToTwitter()">
+      <i class="fab fa-twitter"></i>
+    </div>
+    <div class="share-btn share-whatsapp" onclick="shareToWhatsApp()">
+      <i class="fab fa-whatsapp"></i>
+    </div>
+    <div class="share-btn share-instagram" onclick="shareToInstagram()">
+      <i class="fab fa-instagram"></i>
+    </div>
+  </div>
+  
+  <!-- Scroll to Top Button -->
+  <div class="scroll-top" onclick="scrollToTop()">
+    <i class="fas fa-arrow-up"></i>
+  </div>
+  
+  <div class="header" data-aos="fade-down">
+    <img src="https://i.ibb.co.com/TD56jXwj/Screenshot-20231101-151331-Chrome-2977765793-removebg-preview-1.png" alt="logo BPS"/>
+    <h2>Praktik Kerja Lapangan di Badan Pusat Statistik kota Medan tahun 2025</h2>
+  </div>
+  
+  <div class="menu" data-aos="fade-up">
+    <button onclick="showContent('tentang')" class="menu-btn active">
+      <i class="fas fa-info-circle"></i> Tentang Kami
+    </button>
+    <button onclick="showContent('anggota')" class="menu-btn">
+      <i class="fas fa-users"></i> Anggota Kelompok
+    </button>
+    <button onclick="showContent('harapan')" class="menu-btn">
+      <i class="fas fa-star"></i> Harapan Kami
+    </button>
+    <button onclick="showContent('lokasi')" class="menu-btn">
+      <i class="fas fa-map-marker-alt"></i> Lokasi PKL
+    </button>
+    <button onclick="showContent('dokumentasi')" class="menu-btn">
+      <i class="fas fa-images"></i> Dokumentasi
+    </button>
+    <button onclick="showContent('video')" class="menu-btn">
+      <i class="fas fa-video"></i> Video Kegiatan
+    </button>
+  </div>
+
+  <!-- Konten Tentang Kami -->
+  <div id="tentang" class="content">
+    <h2 data-aos="fade-right">Tentang Kami</h2>
+    <p data-aos="fade-left">Kami adalah siswa/i dari jurusan Rekayasa Perangkat Lunak yang sedang melaksanakan PKL di Kantor BPS Kota Medan. Selama PKL, kami belajar mengenai administrasi perkantoran, pengolahan data, serta keterampilan kerja lainnya yang mendukung dunia kerja.</p>
+  </div>
+  
+  <!-- Konten Anggota Kelompok -->
+  <div id="anggota" class="content">
+    <h2 data-aos="fade-right">Anggota Kelompok</h2>
+    <div class="anggota-grid" data-aos="fade-left">
+      <div class="anggota-item">
+        <div class="anggota-foto">
+          <img src="https://i.ibb.co.com/5xLxghkR/7664963d-63d1-4482-9541-49b61b55e247.jpg" alt="Lia" />
+        </div>
+        <div class="anggota-nama">Lia</div>
+      </div>
+      
+      <div class="anggota-item">
+        <div class="anggota-foto">
+          <img src="https://i.ibb.co.com/Qjbjcdg3/e630cd6b-2dec-40d9-84dd-dd54b07573ad.jpg" alt="Farezi" />
+        </div>
+        <div class="anggota-nama">Farezi</div>
+      </div>
+      
+      <div class="anggota-item">
+        <div class="anggota-foto">
+         <img src="https://i.ibb.co.com/3m8YZJnZ/d2195a13-d758-4514-8ea6-1a4637eb5027.jpg" alt="Sabda" />
+        </div>
+        <div class="anggota-nama">Sabda</div>
+      </div>
+      
+      <div class="anggota-item">
+        <div class="anggota-foto">
+         <img src="https://i.ibb.co.com/tMmzhSVk/a4cc5e4a-9740-40a7-9959-51a3faa86183.jpg" alt="Zahra" />
+        </div>
+        <div class="anggota-nama">Zahra</div>
+      </div>
+      
+      <div class="anggota-item">
+        <div class="anggota-foto">
+          <img src="https://i.ibb.co.com/9kj4r7bF/2cbe97a1-3db7-4978-b7a3-507eb1ada48f.jpg" alt="Arela" />
+        </div>
+        <div class="anggota-nama">Arela</div>
+      </div>
+      
+      <div class="anggota-item">
+        <div class="anggota-foto">
+         <img src="https://i.ibb.co.com/Cs3drS4j/feba096a-94e8-4599-8784-1154827ebed2.jpg" alt="Alvian" />
+        </div>
+        <div class="anggota-nama">Alvian</div>
+      </div>
+    </div>
+  </div>
+  
+  <!-- Konten Harapan Kami -->
+  <div id="harapan" class="content">
+    <h2 data-aos="fade-right">Harapan Kami</h2>
+    <p data-aos="fade-left">Melalui PKL di BPS Medan, kami berharap dapat menambah pengalaman, memperluas pengetahuan, melatih keterampilan kerja, serta menumbuhkan sikap disiplin dan tanggung jawab. Semoga ilmu yang didapat bisa bermanfaat di masa depan.</p>
+  </div>
+  
+  <!-- Konten Lokasi PKL -->
+  <div id="lokasi" class="content">
+    <h2 data-aos="fade-right">Lokasi PKL</h2>
+    <p data-aos="fade-left">Kami melaksanakan PKL di <b>Kantor BPS Kota Medan</b>.</p>
+    <iframe data-aos="fade-up" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d127488.8042551456!2d98.5545299!3d3.5951954!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x303131c0a0d7f1db%3A0x97c013c6d0c4a965!2sBadan%20Pusat%20Statistik%20Kota%20Medan!5e0!3m2!1sid!2sid!4v1692889888888!5m2!1sid!2sid" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+  </div>
+  
+  <!-- Konten Dokumentasi -->
+  <div id="dokumentasi" class="content">
+    <h2 data-aos="fade-right">Dokumentasi</h2>
+    <p data-aos="fade-left">Berikut adalah dokumentasi kegiatan PKL kami:</p>
+    
+    <!-- Tombol Dokumentasi -->
+    <div class="dokumentasi-buttons" data-aos="fade-up">
+      <button class="dokumentasi-btn active" onclick="showDokumentasi('absensi')">
+        <div class="profil-img">
+          <img src="https://i.ibb.co.com/zVrD4bCr/images-removebg-preview.png" alt="bersama-sama" />
+        </div>
+        <span>Absensi Kami</span>
+      </button>
+      
+      <button class="dokumentasi-btn" onclick="showDokumentasi('lia')">
+        <div class="profil-img">
+          <img src="https://i.ibb.co.com/5xLxghkR/7664963d-63d1-4482-9541-49b61b55e247.jpg" alt="Lia" />
+        </div>
+        <span>Lia</span>
+      </button>
+      
+      <button class="dokumentasi-btn" onclick="showDokumentasi('farezi')">
+        <div class="profil-img">
+          <img src="https://i.ibb.co.com/Qjbjcdg3/e630cd6b-2dec-40d9-84dd-dd54b07573ad.jpg" alt="Farezi" />
+        </div>
+        <span>Farezi</span>
+      </button>
+      
+      <button class="dokumentasi-btn" onclick="showDokumentasi('sabda')">
+        <div class="profil-img">
+          <img src="https://i.ibb.co.com/3m8YZJnZ/d2195a13-d758-4514-8ea6-1a4637eb5027.jpg" alt="Sabda" />
+        </div>
+        <span>Sabda</span>
+      </button>
+      
+      <button class="dokumentasi-btn" onclick="showDokumentasi('arela')">
+        <div class="profil-img">
+          <img src="https://i.ibb.co.com/9kj4r7bF/2cbe97a1-3db7-4978-b7a3-507eb1ada48f.jpg" alt="Arela" />
+        </div>
+        <span>Arela</span>
+      </button>
+      
+      <button class="dokumentasi-btn" onclick="showDokumentasi('zahra')">
+        <div class="profil-img">
+          <img src="https://i.ibb.co.com/tMmzhSVk/a4cc5e4a-9740-40a7-9959-51a3faa86183.jpg" alt="Zahra" />
+        </div>
+        <span>Zahra</span>
+      </button>
+      
+      <button class="dokumentasi-btn" onclick="showDokumentasi('alvian')">
+        <div class="profil-img">
+          <img src="https://i.ibb.co.com/Cs3drS4j/feba096a-94e8-4599-8784-1154827ebed2.jpg" alt="Alvian" />
+        </div>
+        <span>Alvian</span>
+      </button>
+    </div>
+    
+    <!-- Galeri untuk Absensi Kami -->
+    <div id="absensi" class="dokumentasi-gallery active">
+      <h3 data-aos="fade-right">Dokumentasi Absensi Kami</h3>
+      <div class="gallery" data-aos="fade-up">
+        <div class="gallery-item">
+          <a href="https://i.ibb.co.com/TDCMH2pN/3bbce50c-8093-464e-8a82-c8c6aa7b9995.jpg" data-lightbox="dokumentasi" data-title="Melakukan absensi di tempat PKL">
+            <img src="https://i.ibb.co.com/Q3pDM3vp/IMG-20250929-WA0064.jpg" alt="Absensi PKL">
+          </a>
+          <div class="gallery-caption">1. Melakukan absensi di tempat PKL</div>
+        </div>
+        
+        <div class="gallery-item">
+          <a href="https://i.ibb.co.com/p8fV0Nx/d30963e7-9e81-4f01-9348-1834136e25d8.jpg" data-lightbox="dokumentasi" data-title="Melakukan absensi di tempat PKL">
+            <img src="https://i.ibb.co.com/p8fV0Nx/d30963e7-9e81-4f01-9348-1834136e25d8.jpg" alt="Absensi"/>
+          </a>
+          <div class="gallery-caption">2. Melakukan absensi di tempat PKL</div>
+        </div>
+        
+        <div class="gallery-item">
+          <a href="https://i.ibb.co.com/b5ZKPjZm/Whats-App-Image-2025-10-01-at-07-49-43.jpg" data-lightbox="dokumentasi" data-title="absensi">
+            <img src="https://i.ibb.co.com/b5ZKPjZm/Whats-App-Image-2025-10-01-at-07-49-43.jpg" alt="absensi"/>
+          </a>
+          <div class="gallery-caption">3. Kegiatan absensi harian</div>
+        </div>
+        
+        <div class="gallery-item">
+          <a href="https://i.ibb.co.com/rffjK34X/Whats-App-Image-2025-10-13-at-09-09-46.jpg" data-lightbox="dokumentasi" data-title="absensi">
+            <img src="https://i.ibb.co.com/rffjK34X/Whats-App-Image-2025-10-13-at-09-09-46.jpg" alt="absensi"/>
+          </a>
+          <div class="gallery-caption">4. Dokumentasi absensi bersama</div>
+        </div>
+        
+        <div class="gallery-item">
+          <a href="https://i.ibb.co.com/KpCmW3Wv/Whats-App-Image-2025-09-28-at-07-36-32-1.jpg" data-lightbox="dokumentasi" data-title="absensi lapangan">
+            <img src="https://i.ibb.co.com/KpCmW3Wv/Whats-App-Image-2025-09-28-at-07-36-32-1.jpg" alt="absensi lapangan"/>
+          </a>
+          <div class="gallery-caption">5. Absensi sebelum kegiatan lapangan</div>
+        </div>
+        
+        <div class="gallery-item">
+          <a href="https://i.ibb.co.com/My5CnWvy/Whats-App-Image-2025-10-10-at-15-12-05.jpg" data-lightbox="dokumentasi" data-title="absensi akhir">
+            <img src="https://i.ibb.co.com/JWxnTrVP/Whats-App-Image-2025-10-10-at-13-58-27.jpg" alt="absensi">
+          </a>
+          <div class="gallery-caption">6. Absensi bersama</div>
+        </div>
+
+         <div class="gallery-item">
+          <a href="https://i.ibb.co.com/My5CnWvy/Whats-App-Image-2025-10-10-at-15-12-05.jpg" data-lightbox="dokumentasi" data-title="absensi akhir">
+            <img src="https://i.ibb.co.com/CKDG3RQn/Whats-App-Image-2025-10-10-at-13-41-18.jpg" alt="absensi">
+          </a>
+          <div class="gallery-caption">7. Absensi bersama</div>
+        </div>
+
+        <div class="gallery-item">
+          <a href="https://i.ibb.co.com/My5CnWvy/Whats-App-Image-2025-10-10-at-15-12-05.jpg" data-lightbox="dokumentasi" data-title="absensi akhir">
+           <img src="https://i.ibb.co.com/1GH1K93x/Whats-App-Image-2025-10-07-at-08-15-19.jpg" alt="absensi">
+          </a>
+          <div class="gallery-caption">8. Absensi bersama</div>
+        </div>
+
+        <div class="gallery-item">
+          <a href="https://i.ibb.co.com/My5CnWvy/Whats-App-Image-2025-10-10-at-15-12-05.jpg" data-lightbox="dokumentasi" data-title="absensi akhir">
+           <img src="https://i.ibb.co.com/p8kbSkq/Whats-App-Image-2025-10-06-at-08-38-29.jpg" alt="absensi">
+          </a>
+          <div class="gallery-caption">9. Absensi bersama</div>
+        </div>
+
+        <div class="gallery-item">
+          <a href="https://i.ibb.co.com/My5CnWvy/Whats-App-Image-2025-10-10-at-15-12-05.jpg" data-lightbox="dokumentasi" data-title="absensi akhir">
+           <img src="https://i.ibb.co.com/sdLCW98T/Whats-App-Image-2025-09-24-at-07-39-17.jpg" alt="absensi">
+          </a>
+          <div class="gallery-caption">10. Absensi bersama</div>
+        </div>
+      </div>
+    </div>
+    
+    <!-- Galeri untuk Lia -->
+    <div id="lia" class="dokumentasi-gallery">
+      <h3 data-aos="fade-right">Dokumentasi Kerjaan Lia</h3>
+      <div class="gallery" data-aos="fade-up">
+        <div class="gallery-item">
+          <a href="https://i.ibb.co.com/TDCMH2pN/3bbce50c-8093-464e-8a82-c8c6aa7b9995.jpg" data-lightbox="dokumentasi" data-title="Lia melakukan absensi">
+            <img src="https://i.ibb.co.com/Q3pDM3vp/IMG-20250929-WA0064.jpg" alt="Lia absensi">
+          </a>
+          <div class="gallery-caption">1. Lia melakukan absensi di tempat PKL</div>
+        </div>
+        
+        <div class="gallery-item">
+          <a href="https://i.ibb.co.com/p8fV0Nx/d30963e7-9e81-4f01-9348-1834136e25d8.jpg" data-lightbox="dokumentasi" data-title="Lia scan dokumen">
+            <img src="https://i.ibb.co.com/p8fV0Nx/d30963e7-9e81-4f01-9348-1834136e25d8.jpg" alt="Lia scan dokumen"/>
+          </a>
+          <div class="gallery-caption">2. Lia melakukan scan dokumen tugas</div>
+        </div>
+        
+        <div class="gallery-item">
+          <a href="https://i.ibb.co.com/b5ZKPjZm/Whats-App-Image-2025-10-01-at-07-49-43.jpg" data-lightbox="dokumentasi" data-title="Lia input data">
+            <img src="https://i.ibb.co.com/b5ZKPjZm/Whats-App-Image-2025-10-01-at-07-49-43.jpg" alt="Lia input data"/>
+          </a>
+          <div class="gallery-caption">3. Lia menginput data ke Excel</div>
+        </div>
+      </div>
+    </div>
+    
+    <!-- Galeri untuk Farezi -->
+    <div id="farezi" class="dokumentasi-gallery">
+      <h3 data-aos="fade-right">Dokumentasi Kerjaan Farezi</h3>
+      <div class="gallery" data-aos="fade-up">
+        <div class="gallery-item">
+          <a href="https://i.ibb.co.com/8nprjTwn/5b0f1bc6-8052-415a-af9e-cf6698224b53.jpg" data-lightbox="dokumentasi" data-title="Farezi print peta">
+           <img src="https://i.ibb.co.com/7NvkwJwQ/Whats-App-Image-2025-10-15-at-09-01-55.jpg" alt="Whats-App-Image-2025-10-15-at-09-01-55">
+          </a>
+          <div class="gallery-caption">1. Farezi mencetak surat tugas</div>
+        </div>
+        
+        <div class="gallery-item">
+          <a href="https://i.ibb.co.com/0yFsKFZm/24404686-7ad8-4568-b7c3-0cab4416bc8d.jpg" data-lightbox="dokumentasi" data-title="Farezi mengerjakan profiling">
+            <img src="https://i.ibb.co.com/nNyJTTWY/farezi.jpg" alt="farezi mengerjakan profiling">
+          </a>
+          <div class="gallery-caption">2. Farezi mengerjakan profiling</div>
+        </div>
+        
+        <div class="gallery-item">
+          <a href="https://i.ibb.co.com/qMdsMpT3/8044104e-a577-444d-927e-abe5fb12cfb9.jpg" data-lightbox="dokumentasi" data-title="Farezi scan dokumen">
+            <img src="https://i.ibb.co.com/ksL35KDG/farzokk.jpg" alt="farezi mengerjakan scan dokumen">
+          </a>
+          <div class="gallery-caption">3. Farezi mengerjakan scan dokumen</div>
+        </div>
+
+        <div class="gallery-item">
+          <a href="https://i.ibb.co.com/qMdsMpT3/8044104e-a577-444d-927e-abe5fb12cfb9.jpg" data-lightbox="dokumentasi" data-title="Farezi scan dokumen">
+           <img src="https://i.ibb.co.com/20DQ4X5p/farzokk2.jpg" alt="farzokk2">
+          </a>
+          <div class="gallery-caption">4. Farezi menyusun berkas SPM</div>
+        </div>
+      </div>
+    </div>
+    
+    <!-- Galeri untuk Sabda -->
+    <div id="sabda" class="dokumentasi-gallery">
+      <h3 data-aos="fade-right">Dokumentasi Kerjaan Sabda</h3>
+      <div class="gallery" data-aos="fade-up">
+        <div class="gallery-item">
+          <a href="https://i.ibb.co.com/dwf6Dr18/IMG-20250822-WA0031.jpg" data-lightbox="dokumentasi" data-title="Sabda input data">
+            <img src="https://i.ibb.co.com/dwf6Dr18/IMG-20250822-WA0031.jpg" alt="Sabda input data"/>
+          </a>
+          <div class="gallery-caption">1. Sabda memindai data ke Excel</div>
+        </div>
+        
+        <div class="gallery-item">
+          <a href="https://i.ibb.co.com/5xM8kLQ3/Whats-App-Image-2025-10-10-at-09-55-29.jpg" data-lightbox="dokumentasi" data-title="Sabda profiling">
+            <img src="https://i.ibb.co.com/5xM8kLQ3/Whats-App-Image-2025-10-10-at-09-55-29.jpg" alt="Sabda profiling">
+          </a>
+          <div class="gallery-caption">2. Sabda mengerjakan profiling data</div>
+        </div>
+        
+        <div class="gallery-item">
+          <a href="https://i.ibb.co.com/KpCmW3Wv/Whats-App-Image-2025-09-28-at-07-36-32-1.jpg" data-lightbox="dokumentasi" data-title="Sabda lapangan">
+            <img src="https://i.ibb.co.com/7tPj9pBj/24404686-7ad8-4568-b7c3-0cab4416bc8d-1.jpg" alt=" sabda mengerjagakan ngeprint surat">
+          </a>
+          <div class="gallery-caption">3. sabda mengerjagakan ngeprint surat</div>
+        </div>
+
+         <div class="gallery-item">
+          <a href="https://i.ibb.co.com/KpCmW3Wv/Whats-App-Image-2025-09-28-at-07-36-32-1.jpg" data-lightbox="dokumentasi" data-title="Sabda lapangan">
+            <img src="https://i.ibb.co.com/8nprjTwn/5b0f1bc6-8052-415a-af9e-cf6698224b53.jpg" alt="sabda print dokumen peta"/>
+          </a>
+          <div class="gallery-caption">4. sabda mengerjakan print dokumen peta</div>
+        </div>
+
+        <div class="gallery-item">
+          <a href="https://i.ibb.co.com/KpCmW3Wv/Whats-App-Image-2025-09-28-at-07-36-32-1.jpg" data-lightbox="dokumentasi" data-title="Sabda lapangan">
+           <a href="https://ibb.co.com/PsVL8C1S"><img src="https://i.ibb.co.com/BHYpRsT1/ju2.jpg" alt="sabda mengerjakan susun dokumen peta">
+          <div class="gallery-caption">5. sabda mengerjakan susun dokumen peta</div>
+        </div>
+
+        <div class="gallery-item">
+          <a href="https://i.ibb.co.com/KpCmW3Wv/Whats-App-Image-2025-09-28-at-07-36-32-1.jpg" data-lightbox="dokumentasi" data-title="Sabda lapangan">
+           <a href="https://ibb.co.com/1f5TXBLq"><img src="https://i.ibb.co.com/rGSHpqm6/ju-6.jpg" alt="sabda melakukan susun berkas alamat peta">
+          </a>
+          <div class="gallery-caption">6.sabda melakukan susun berkas alamat peta</div>
+        </div>
+
+        <div class="gallery-item">
+          <a href="https://i.ibb.co.com/KpCmW3Wv/Whats-App-Image-2025-09-28-at-07-36-32-1.jpg" data-lightbox="dokumentasi" data-title="Sabda lapangan">
+          <a href="https://ibb.co.com/V0c96xj3"><img src="https://i.ibb.co.com/ymcP2pfV/Whats-App-Image-2025-10-29-at-12-43-27.jpg" alt="sabda website">
+          </a>
+          <div class="gallery-caption">7.sabda mengerjagakan website</div>
+        </div>
+      </div>
+    </div>
+    
+    <!-- Galeri untuk Arela -->
+    <div id="arela" class="dokumentasi-gallery">
+      <h3 data-aos="fade-right">Dokumentasi Kerjaan Arela</h3>
+      <div class="gallery" data-aos="fade-up">
+        <div class="gallery-item">
+          <a href="https://i.ibb.co.com/My5CnWvy/Whats-App-Image-2025-10-10-at-15-12-05.jpg" data-lightbox="dokumentasi" data-title="Arela laporan">
+            <img src="https://i.ibb.co.com/bn2Hjhf/Whats-App-Image-2025-10-29-at-13-27-33.jpg" alt="arela">
+          </a>
+          <div class="gallery-caption">1. Arela mengerjakan entri berkas survei</div>
+        </div>
+        
+        <div class="gallery-item">
+          <a href="https://i.ibb.co.com/8nprjTwn/5b0f1bc6-8052-415a-af9e-cf6698224b53.jpg" data-lightbox="dokumentasi" data-title="Arela print dokumen">
+            <img src="https://i.ibb.co.com/8nprjTwn/5b0f1bc6-8052-415a-af9e-cf6698224b53.jpg" alt="Arela print dokumen"/>
+          </a>
+          <div class="gallery-caption">2. Arela mencetak dokumen penting</div>
+        </div>
+        
+        <div class="gallery-item">
+          <a href="https://i.ibb.co.com/qMdsMpT3/8044104e-a577-444d-927e-abe5fb12cfb9.jpg" data-lightbox="dokumentasi" data-title="Arela scan">
+            <img src="https://i.ibb.co.com/qMdsMpT3/8044104e-a577-444d-927e-abe5fb12cfb9.jpg" alt="Arela scan"/>
+          </a>
+          <div class="gallery-caption">3. Arela melakukan scan dokumen</div>
+        </div>
+      </div>
+    </div>
+    
+    <!-- Galeri untuk Zahra -->
+    <div id="zahra" class="dokumentasi-gallery">
+      <h3 data-aos="fade-right">Dokumentasi Kerjaan Zahra</h3>
+      <div class="gallery" data-aos="fade-up">
+        <div class="gallery-item">
+          <a href="https://i.ibb.co.com/p8fV0Nx/d30963e7-9e81-4f01-9348-1834136e25d8.jpg" data-lightbox="dokumentasi" data-title="Zahra absensi">
+           <img src="https://i.ibb.co.com/zWyjLZ3K/Whats-App-Image-2025-10-29-at-12-29-52.jpg" alt="zahra">
+          </a>
+          <div class="gallery-caption">1. Zahra melakukan ngeprint berkas</div>
+        </div>
+        
+        <div class="gallery-item">
+          <a href="https://i.ibb.co.com/dwf6Dr18/IMG-20250822-WA0031.jpg" data-lightbox="dokumentasi" data-title="Zahra data entry">
+            <img src="https://i.ibb.co.com/N6Dzzm2S/Whats-App-Image-2025-10-29-at-12-29-52-1.jpg" alt="zahra">
+          </a>
+          <div class="gallery-caption">2. Zahra melakukan pengambilan berkas survei</div>
+        </div>
+      </div>
+    </div>
+    
+    <!-- Galeri untuk Alvian -->
+    <div id="alvian" class="dokumentasi-gallery">
+      <h3 data-aos="fade-right">Dokumentasi Kerjaan Alvian</h3>
+      <div class="gallery" data-aos="fade-up">
+        <div class="gallery-item">
+          <a href="https://i.ibb.co.com/0yFsKFZm/24404686-7ad8-4568-b7c3-0cab4416bc8d.jpg" data-lightbox="dokumentasi" data-title="Alvian print">
+           <img src="https://i.ibb.co.com/7xZ0frr0/al.jpg" alt="al">
+          </a>
+          <div class="gallery-caption">1. Alvian mencetak Website</div>
+        </div>
+        
+        <div class="gallery-item">
+          <a href="https://i.ibb.co.com/5xM8kLQ3/Whats-App-Image-2025-10-10-at-09-55-29.jpg" data-lightbox="dokumentasi" data-title="Alvian profiling">
+            <img src="https://i.ibb.co.com/27KPZcv5/al2.jpg" alt="Alvian mengerjakan profiling">
+          </a>
+          <div class="gallery-caption">2. Alvian mengerjakan profiling</div>
+        </div>
+        
+        <div class="gallery-item">
+          <a href="https://i.ibb.co.com/My5CnWvy/Whats-App-Image-2025-10-10-at-15-12-05.jpg" data-lightbox="dokumentasi" data-title="Alvian laporan">
+            <img src="https://i.ibb.co.com/6JLMW2rH/al3.jpg" alt="Alvian mengambil foto dokumentasi pegawai yang lagi rapat">
+          </a>
+          <div class="gallery-caption">3. Alvian mengambil foto dokumentasi pegawai yang lagi rapat</div>
+        </div>
+
+        <div class="gallery-item">
+          <a href="https://i.ibb.co.com/My5CnWvy/Whats-App-Image-2025-10-10-at-15-12-05.jpg" data-lightbox="dokumentasi" data-title="Alvian laporan">
+            <img src="https://i.ibb.co.com/vCK9qMxB/al4.jpg" alt="al4">
+          </a>
+          <div class="gallery-caption">4. Alvian mengerjagakan dokumen</div>
+        </div>
+
+        <div class="gallery-item">
+          <a href="https://i.ibb.co.com/My5CnWvy/Whats-App-Image-2025-10-10-at-15-12-05.jpg" data-lightbox="dokumentasi" data-title="Alvian laporan">
+          <img src="https://i.ibb.co.com/XrNs8gQg/al5.jpg" alt="al5">
+          </a>
+          <div class="gallery-caption">5. Alvian mengerjagakan website</div>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <!-- Konten Video Kegiatan PKL -->
+  <div id="video" class="content">
+    <h2 data-aos="fade-right">Video Kegiatan PKL</h2>
+    <p data-aos="fade-left">Berikut adalah dokumentasi video kegiatan PKL kami di BPS Kota Medan:</p>
+    
+    <div class="video-grid" data-aos="fade-up">
+      <div class="video-item">
+        <div class="video-container">
+          <video controls preload="metadata">
+            <source src="video1.mp4" type="video/mp4">
+            Browser Anda tidak mendukung tag video.
+          </video>
+        </div>
+        <div class="video-info">
+          <h3>1. Dokumentasi Memuat Konten Sensus Ekonomi</h3>
+          <p>Proses memuat data sensus ekonomi di BPS Kota Medan.</p>
+        </div>
+      </div>
+      
+      <div class="video-item">
+        <div class="video-container">
+          <video controls preload="metadata">
+            <source src="video2.mp4" type="video/mp4">
+            Browser Anda tidak mendukung tag video.
+          </video>
+        </div>
+        <div class="video-info">
+          <h3>2. Kegiatan Pengolahan Data</h3>
+          <p>Dokumentasi saat kami melakukan pengolahan data statistik.</p>
+        </div>
+      </div>
+      
+      <div class="video-item">
+        <div class="video-container">
+          <video controls preload="metadata">
+            <source src="video3.mp4" type="video/mp4">
+          </video>
+            Browser Anda tidak mendukung tag video.
+        </div>
+        <div class="video-info">
+          <h3>3. Kegiatan Mengerjakan memasukan berkas ke dalam mesin scan</h3>
+          <p>Video dokumentasi kegiatan mengerjakan memasukan berkaske dalam mesin scan.</p>
+        </div>
+      </div>
+
+      <div class="video-item">
+        <div class="video-container">
+          <video controls preload="metadata">
+            <source src="video4.mp4" type="video/mp4">
+          </video>
+            Browser Anda tidak mendukung tag video.
+        </div>
+        <div class="video-info">
+          <h3>4. Kegiatan Mengerjakan website</h3>
+          <p>Video dokumentasi kegiatan mengerjakan website.</p>
+        </div>
+      </div>
+      
+      <!-- Contoh video baru yang bisa ditambahkan -->
+       <div class="video-item">
+        <div class="video-container">
+          <video controls preload="metadata">
+            <source src="video5.mp4" type="video/mp4">
+              Browser Anda tidak mendukung tag video.
+          </video>
+        </div>
+        <div class="video-info">
+          <h3>5. kegiatan mengerjagakan berkas yang mau di scan.</h3>
+          <p>Blom ada video dokumentasi.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Tombol untuk menambah video baru -->
+    <div class="add-video-container" data-aos="fade-up">
+      <button class="add-video-btn" onclick="showAddVideoForm()">
+        <i class="fas fa-plus"></i> Tambah Video Baru
+      </button>
+    </div>
+    
+    <!-- Form untuk menambah video baru (awalnya tersembunyi) -->
+    <div id="addVideoForm" class="add-video-form" style="display: none;">
+      <h3>Tambah Video Baru</h3>
+      <div class="form-group">
+        <label for="videoTitle">Judul Video:</label>
+        <input type="text" id="videoTitle" placeholder="Masukkan judul video">
+      </div>
+      <div class="form-group">
+        <label for="videoDesc">Deskripsi Video:</label>
+        <textarea id="videoDesc" placeholder="Masukkan deskripsi video"></textarea>
+      </div>
+      <div class="form-group">
+        <label for="videoFile">Pilih Video:</label>
+        <input type="file" id="videoFile" accept="video/mp4">
+      </div>
+      <div class="form-group">
+        <label for="videoPoster">Pilih Poster (Opsional):</label>
+        <input type="file" id="videoPoster" accept="image/*">
+      </div>
+      <div class="form-buttons">
+        <button class="submit-btn" onclick="addNewVideo()">Simpan</button>
+        <button class="cancel-btn" onclick="hideAddVideoForm()">Batal</button>
+      </div>
+    </div>
+  </div>
+  
+  <div class="footer">
+    © 2025 Tim PKL BPS – Lia, Farezi, Sabda, Zahra, Arela, Alvian
+  </div>
+  
+  <!-- Image Modal -->
+  <div id="imageModal" class="modal">
+    <span class="close" onclick="closeModal()">&times;</span>
+    <img class="modal-content" id="modalImage">
+  </div>
+  
+  <!-- External JavaScript -->
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/js/lightbox.min.js"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
